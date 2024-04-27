@@ -1,0 +1,59 @@
+.content{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.not{
+    border: 10px solid black;
+    display: flex;
+    width: 70%;
+    height: 100vh;
+}
+
+.notC{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.img{
+    display: flex;
+    background: pink;
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+.notT{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+
+.blur-background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("rural.jpg");
+    background-size: cover;
+    filter: blur(10px); 
+    z-index: -1; 
+}
+
+header{
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+
+    & nav > ul > li{
+        display: inline-flex;
+        padding: 0px 100px;
+        list-style: none;
+
+        & a{
+            text-decoration: none;
+        }
+    }
+}
